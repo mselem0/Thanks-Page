@@ -1,46 +1,58 @@
 <!DOCTYPE html>
 <html lang="ar">
 
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>فاست تراك – Fast Track</title>
-        <style>
-            html, body {
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>فاست تراك – Fast Track</title>
+    <style>
+        html, body {
+            min-width: 100%;
+            min-height: 100vh;
+            padding: 0;
+            margin: 0;
+        }
+        body {
+            display: flex; justify-content: center; align-items: center;
+            background-image: url(cover.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .success {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 80%;
+            min-height: 50%;
+            background-color: #130c0ee3;
+            border-radius: 10px;
+            box-sizing: border-box;
+            font-size: 4rem;
+            color: #777;
+        }
+        .success p {
+            width: 70%;
+            line-height: 1.8;
+            text-align: center;
+            font-family: "Sakkal Majalla";
+        }
+        @media (max-width: 767px) {
+            .success {
                 width: 100%;
                 height: 100vh;
+                border-radius: 0;
+                font-size: 2.9rem
             }
-            body {
-                display: flex; justify-content: center; align-items: center;
-                background-image: url(https://lh3.googleusercontent.com/proxy/CbZl0-9UyLPtsv_G2TRP6WulM7yNOtAtJahoKOpA9JbpcDq1kYtX6X5ouvSF0NAKm71ybqdIFiL58Ve31WNniHdw9vgYbgShprym6FQFaOcBWCTxkkuQFI00yijaALCq07xyfgwmeF9RoexAyKPElCwMEA);
-                background-repeat: no-repeat;
-                background-position: 0% 0%;
-            }
-            .success {
-                width: 80%;
-                min-height: 50%;
-                background-color: aqua;
-                padding: 73px 20px;
-                border-radius: 10px;
-                box-sizing: border-box;
-                font-size: 4rem;
-                text-align: center;
-                color: #777;
-            }
-            @media (max-width: 767px) {
-                .success {
-                    width: 100%;
-                    font-size: 2.9rem
-                }
-            }
-        </style>
-    </head>
+        }
+    </style>
+</head>
 
-    <body>
-        <div class="success">
-            تم ارسال طلبكم بنجاح سيتم التواصل معكم في خلال 24 ساعه علي رقم الموبايل
-        </div>
-    </body>
+<body>
+<div class="success">
+    <p>تم ارسال طلبكم بنجاح سيتم التواصل معكم في خلال 24 ساعه علي رقم الموبايل</p>
+</div>
+</body>
 
 </html>
